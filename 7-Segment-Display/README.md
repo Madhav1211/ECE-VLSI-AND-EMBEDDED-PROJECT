@@ -1,39 +1,29 @@
-# 7-Segment Display Controller (Verilog)
+# 7-Segment Display Controller using Verilog
 
 ## Objective
-- Design a 7-segment display controller using Verilog HDL
-- Convert 4-bit binary input into 7-segment output
+Design a Verilog-based 7-segment display controller to display hexadecimal digits (0–F).
 
 ## Tools Used
+- Verilog HDL
 - Icarus Verilog
 - GTKWave
 - VS Code
 
-## Working Principle
-- Input is a 4-bit binary number
-- Case statement is used as lookup table
-- Output controls segments (a–g)
-- Displays digits from 0 to 9
+## Files
+- seven_seg.v
+- tb_seven_seg.v
 
-## Truth Table
-| Input | Output |
-|------|--------|
-| 0 | 1111110 |
-| 1 | 0110000 |
-| 2 | 1101101 |
-| 3 | 1111001 |
-| 4 | 0110011 |
-| 5 | 1011011 |
-| 6 | 1011111 |
-| 7 | 1110000 |
-| 8 | 1111111 |
-| 9 | 1111011 |
+## Verilog Code
 
-## Applications
-- Digital clocks
-- Calculators
-- Elevators
-- Scoreboards
+![Code](code1.png)
 
-## Conclusion
-This project successfully converts binary input to 7-segment display output using Verilog.
+## Simulation Waveform
+
+![Waveform](waveform.png)
+
+## Working
+The testbench applies hexadecimal inputs to the design.
+The controller converts each hexadecimal digit into the corresponding 7-segment display pattern.
+
+## Result
+The simulation waveform verifies correct operation of the 7-segment display controller.
